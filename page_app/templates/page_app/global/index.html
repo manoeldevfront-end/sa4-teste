@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +8,115 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>{% block title %}{% endblock title %}</title>
+    <title>JJ Investimento</title>
 </head>
 
 <body class="bg-light">
-    {% include "page_app/partial/header.html" %}
-    {% include "page_app/partial/welcome.html" %}
+    <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="../img/logo.png" alt="Logo"
+                    class="rounded-circle" width="30"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../partial/services.html">Nossos Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../partial/contato.html">Contato</a>
+                    </li>
+                </ul>
+                <!-- Mover para a margem esquerda -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Voltar ao topo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="mt-4 p-5 bg-dark text-white text-center">
+    <!-- Adicionando margem superior e inferior -->
+    <img src="../img/JJ_ivestimento.png" alt="imagem grande logo" class="rounded-circle mb-3"
+        width="150">
 
-    {% block content %}{% endblock content %}
-    {% include "page_app/partial/footer.html" %}
+    <!-- Título e descrição -->
+    <h1>JJ Investimentos</h1>
+    <p>Seu caminho para a prosperidade começa aqui!</p>
+</div>
+<div class="container mt-4 mb-4 p-5">
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Cresça com sabedoria, <span
+                    class="text-body-secondary">invista conosco.</span></h2>
+            <p class="lead">Na jornada financeira, cada escolha é uma semente plantada para o futuro. Oferecemos
+                soluções sólidas e orientação especializada, cultivando seu patrimônio com cuidado. Faça parte do
+                caminho rumo à prosperidade – onde cada investimento é uma oportunidade para o seu crescimento
+                sustentável.</p>
+        </div>
+        <div class="col-md-5">
+            <img src="../img/imagem_2.jpg" alt="Imagem da empresa"
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" role="img" focusable="false">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Semeando sucesso, <span class="text-body-secondary">colhendo
+                    conquistas financeiras.</span></h2>
+            <p class="lead">Cada investimento é um passo firme rumo à realização de seus objetivos. Plantamos as
+                melhores oportunidades para seu crescimento econômico. Viva a colheita dos frutos do seu
+                investimento conosco!</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img src="../img/imagem_3.jpg" alt="Imagem da empresa"
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" role="img" focusable="false">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Multiplicando seu patrimônio, <span
+                    class="text-body-secondary">crescendo sempre!</span></h2>
+            <p class="lead">Com estratégias inovadoras, cada investimento é um impulso para o seu progresso
+                financeiro. Juntos, construímos um futuro sólido e próspero. Invista no seu crescimento conosco!</p>
+        </div>
+        <div class="col-md-5">
+            <img src="../img/imagem_1.jpg" alt="Imagem da empresa"
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" role="img" focusable="false">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+</div>
+
+    <div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="home.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link px-2 text-body-secondary">Nossos Serviços</a></li>
+            <li class="nav-item"><a href="contato.html" class="nav-link px-2 text-body-secondary">Contato</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Voltar ao topo</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 Softway, Inc. All rights reserved.</p>
+    </footer>
+</div>
 </body>
 <!-- Inclua os scripts do Bootstrap (opcional) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
